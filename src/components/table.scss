@@ -25,6 +25,13 @@
       &.at-table__cell--nodata {
         text-align: center;
       }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
     }
   }
 
@@ -47,7 +54,6 @@
     .at-table__column-sorter {
       display: inline-block;
       vertical-align: middle;
-      height: $table-sorter-height;
       width: $table-sorter-width;
 
       &-up,
@@ -168,7 +174,6 @@
     .at-table__thead {
       .at-table__column-sorter {
         width: $table-sorter-width-small;
-        height: $table-sorter-height-small;
 
         &-up,
         &-down {
